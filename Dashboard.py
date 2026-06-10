@@ -196,7 +196,8 @@ class ReunionDashboard:
     
     def initialize_economic_data(self):
         """Initialise les données économiques historiques"""
-        dates = pd.date_range('2014-01-01', datetime.now(), freq='M')
+        # Correction: Utilisation de 'ME' au lieu de 'M'
+        dates = pd.date_range('2014-01-01', datetime.now(), freq='ME')
         data = []
         
         for date in dates:
@@ -231,7 +232,8 @@ class ReunionDashboard:
     
     def initialize_tourism_data(self):
         """Initialise les données touristiques"""
-        dates = pd.date_range('2014-01-01', datetime.now(), freq='M')
+        # Correction: Utilisation de 'ME' au lieu de 'M'
+        dates = pd.date_range('2014-01-01', datetime.now(), freq='ME')
         data = []
         
         for date in dates:
@@ -269,7 +271,8 @@ class ReunionDashboard:
     
     def initialize_agriculture_data(self):
         """Initialise les données agricoles"""
-        dates = pd.date_range('2014-01-01', datetime.now(), freq='M')
+        # Correction: Utilisation de 'ME' au lieu de 'M'
+        dates = pd.date_range('2014-01-01', datetime.now(), freq='ME')
         produits = ['Canne à sucre', 'Fruits tropicaux', 'Viande bovine', 'Lait', 'Légumes', 'Fleurs']
         
         data = []
@@ -296,7 +299,8 @@ class ReunionDashboard:
     
     def initialize_energy_data(self):
         """Initialise les données énergétiques"""
-        dates = pd.date_range('2014-01-01', datetime.now(), freq='M')
+        # Correction: Utilisation de 'ME' au lieu de 'M'
+        dates = pd.date_range('2014-01-01', datetime.now(), freq='ME')
         data = []
         
         for date in dates:
@@ -323,7 +327,8 @@ class ReunionDashboard:
     
     def initialize_demographic_data(self):
         """Initialise les données démographiques"""
-        dates = pd.date_range('2014-01-01', datetime.now(), freq='Y')
+        # Correction: Utilisation de 'YE' au lieu de 'Y' pour les données annuelles
+        dates = pd.date_range('2014-01-01', datetime.now(), freq='YE')
         data = []
         
         population_base = 850000
